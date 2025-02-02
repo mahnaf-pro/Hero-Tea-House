@@ -4,11 +4,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"/>
         <script src="https://cdn.tailwindcss.com"></script>
         <script> tailwind.config = {
             theme: {
                 extend: {
                     colors: {
+                        light: '#EFF6FF',
                         darkred: '#FF0000',
                         orangered: '#FF8938',
                     }
@@ -16,9 +19,31 @@
             }
             }
         </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"/>
         <title>Hero Tea House</title>
+        <!-- <style>
+            h1{ font-size: 3.81rem; }
+            h2{ font-size: 3.05rem; }
+            h3{ font-size: 2.44rem; }
+            h4{ font-size: 1.95rem; }
+        </style> -->
     </head>
-    <body>
+    <body class="bg-light font-['Manrope']">
+        <header class="banner flex justify-between py-16 px-40">
+            <div class="banner-content space-y-8 w-2/3">
+                <h1 class="text-6xl font-extrabold">It's good Tea Time at the Hero Tea House</h1>
+                <p class="w-4/5 text-lg font-medium text-gray-500">Our Unique & Elegant Teas will make your Tongue Satisfy and Taste Buds Smile.</p>
+                <button type="button" class="text-xl font-medium bg-gradient-to-l from-darkred to-orangered px-4 py-3 rounded-lg text-light flex items-end gap-2"><span>Explore More</span><img src="./images/diagonal-arrow.png" class="w-5"></button>
+            </div>
+            <div class="banner-img relative">
+                <img src="./images/banner.png">
+                <div class="flex items-center gap-2 p-4 bg-white w-fit rounded-xl absolute left-6 bottom-0">
+                    <img src="./images/star.png" class="w-12">
+                    <div>
+                        <h4 class="text-3xl font-extrabold">5.00</h4>
+                        <p class="font-medium text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </header>
     </body>
 </html>
